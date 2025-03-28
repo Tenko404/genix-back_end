@@ -4,6 +4,8 @@ const { validationResult } = require('express-validator');
 const userRoutes = require('./routes/userRoutes');
 const sequelize = require('./config/database');
 
+require('./models/User');
+require('./models/Movies');
 const app = express();
 
 // Middleware
